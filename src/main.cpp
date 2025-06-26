@@ -228,11 +228,13 @@ class $modify(CCKeyboardDispatcher) {
 	}
 };
 
+#ifndef GEODE_IS_IOS
 class $modify(MoreOptionsLayer) {
 	void onKeybindings(CCObject*) {
 		KeybindsLayer::create()->show();
 	}
 };
+#endif
 
 class ControllerChecker : public CCObject {
 protected:
